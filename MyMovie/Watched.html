@@ -1,16 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+	pageEncoding="UTF-8"%> -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+        <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+        <title>Insert title here</title>
+    </head>
 
 <body>
-    <p>내가본 영화 입니다.</p>
-    <p>OSJ가 test 해봅니다.</p>
-</body>
+	<div class = "container">
+        <header>
+            <div><h1>내가 봤던 영화들</h1></div>
+        </header>
+        
+        <div class="card">
+            <!-- 카드 헤더 -->
+            <div class="card-header1">
+                <!-- <div class = "card-header-is_closed" >  -->
+                    <!-- <div class = "card-header-text" > 모집중 </div > 
+                    <div class = "card-header-number" > 2 / 5 </div >  -->
+                <!-- </div > -->
+                <!-- <div class="test"><img src = "../image/movie/귀멸의칼날.png"></div> -->
+            </div>
 
+            <!--  카드 바디 -->
+            <div class="card-body">
+                <!--  카드 바디 헤더 -->
+                <div class="card-body-header">
+                    <h1>귀멸의 칼날</h1>
+                    <p class="card-body-hashtag">#귀멸 #칼날 #영화</p>
+                    <p class = "card-body-nickname"> test 페이지</p>
+                </div>
+
+                <p class="card-body-description">
+                    
+                    <br>
+                    대략적인 한줄 감상문을 적을 수 있는 공간
+                </p>
+                <!--  카드 바디 본문 -->
+            
+                <!--  카드 바디 푸터 -->
+
+                <div class="card-body-footer">
+                    <hr style="margin-bottom: 8px; opacity: 0.5; border-color: #EF5A31">
+                    <i class="icon icon-view_count"></i>조회 38회
+                    <i class="icon icon-comments_count"></i>댓글 4개
+                    <!-- <i class="reg_date"> 2018/04/12 </i> -->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <!-- 카드 헤더 -->
+            <div class="card-header2" >
+                <!-- <div class = "card-header-is_closed" > 
+                    <div class = "card-header-text" > 모집중 </div > 
+                    <div class = "card-header-number" > 2 / 5 </div > 
+                </div > -->
+            </div>
+
+            <!--  카드 바디 -->
+            <div class="card-body" a href="">
+                <!--  카드 바디 헤더 -->
+                <div class="card-body-header">
+                    <h1>대외비</h1>
+                    <p class="card-body-hashtag">#대외 #외비 #영화</p>
+                    <p class = "card-body-nickname"> test 페이지</p>
+                </div>
+
+                <p class="card-body-description">
+                    <br>대략적인 한줄 감상문을 적을 수 있는 공간
+                </p>
+                <!--  카드 바디 본문 -->
+                <!--  카드 바디 푸터 -->
+
+                <div class="card-body-footer">
+                    <hr style="margin-bottom: 8px; opacity: 0.5; border-color: #EF5A31">
+                    <i class="icon icon-view_count"></i>조회 38회
+                    <i class="icon icon-comments_count"></i>댓글 4개
+                    <!-- <i class="reg_date"> 2018/04/12 </i> -->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <!-- 카드 헤더 -->
+            <div class="card-header3" >
+                <div class = "card-header-is_closed" > 
+                    <!--<div class = "card-header-text" > 모집중 </div > 
+                    <div class = "card-header-number" > 2 / 5 </div >--> 
+                </div >
+            </div>
+
+            <!--  카드 바디 -->
+            <div class="card-body" a href="">
+                <!--  카드 바디 헤더 -->
+                <div class="card-body-header">
+                    <h1>더 퍼스트 슬램덩크</h1>
+                    <p class="card-body-hashtag">#슬램 #덩크 #농구</p>
+                    <p class = "card-body-nickname"> test 페이지</p>
+                </div>
+
+                <p class="card-body-description">
+                    <br>대략적인 한줄 감상문을 적을 수 있는 공간
+                </p>
+                <!--  카드 바디 본문 -->
+                <!--  카드 바디 푸터 -->
+
+                <div class="card-body-footer">
+                    <hr style="margin-bottom: 8px; opacity: 0.5; border-color: #EF5A31">
+                    <i class="icon icon-view_count"></i>조회 38회
+                    <i class="icon icon-comments_count"></i>댓글 4개
+                    <!-- <i class="reg_date"> 2018/04/12 </i> -->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <!-- 카드 헤더 -->
+            <div class="card-header4" >
+                <div class = "card-header-is_closed" > 
+                    <!--<div class = "card-header-text" > 모집중 </div > 
+                    <div class = "card-header-number" > 2 / 5 </div >--> 
+                </div >
+            </div>
+
+            <!--  카드 바디 -->
+            <div class="card-body" a href="">
+                <!--  카드 바디 헤더 -->
+                <div class="card-body-header">
+                    <h1>똑똑똑</h1>
+                    <p class="card-body-hashtag">#똑똑 #똑똑 #노크</p>
+                    <p class = "card-body-nickname"> test 페이지</p>
+                </div>
+
+                <p class="card-body-description">
+                    <br>대략적인 한줄 감상문을 적을 수 있는 공간
+                </p>
+                <!--  카드 바디 본문 -->
+                <!--  카드 바디 푸터 -->
+
+                <div class="card-body-footer">
+                    <hr style="margin-bottom: 8px; opacity: 0.5; border-color: #EF5A31">
+                    <i class="icon icon-view_count"></i>조회 38회
+                    <i class="icon icon-comments_count"></i>댓글 4개
+                    <!-- <i class="reg_date"> 2018/04/12 </i> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
