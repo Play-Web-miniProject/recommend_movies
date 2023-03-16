@@ -45,12 +45,12 @@ header nav ul li button{
 } */
 /* End header.css */
 /* main.css */
-main{
+/* main{
   width: 80%;
   justify-content: center;
   align-items: center;
   text-align: left;
-}
+} */
 main .container .left{
   width: 30%;
   float: left;
