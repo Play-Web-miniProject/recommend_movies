@@ -5,26 +5,61 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
-        <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="./style.css"/>
-        <title>Insert title here</title>
-    </head>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Insert title here</title>
+</head>
 
 <body>
-	<div class = "container">
+    <div class="container">
         <header>
-            <div><h1>내가 봤던 영화들</h1></div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../mainPage/main.html">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="../TopTenMovie/topTenMovie.html">Top10</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../ReviewPage/review.html">리뷰게시판</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../MyMovie/Watched.html">내가본영화</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Login/Login.html">로그인</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div>
+                <h1>내가 봤던 영화들123</h1>
+            </div>
         </header>
-        
+
         <div class="card">
             <!-- 카드 헤더 -->
             <div class="card-header1">
                 <!-- <div class = "card-header-is_closed" >  -->
-                    <!-- <div class = "card-header-text" > 모집중 </div > 
+                <!-- <div class = "card-header-text" > 모집중 </div > 
                     <div class = "card-header-number" > 2 / 5 </div >  -->
                 <!-- </div > -->
                 <!-- <div class="test"><img src = "../image/movie/귀멸의칼날.png"></div> -->
@@ -36,16 +71,16 @@
                 <div class="card-body-header">
                     <h1>귀멸의 칼날</h1>
                     <p class="card-body-hashtag">#귀멸 #칼날 #영화</p>
-                    <p class = "card-body-nickname"> test 페이지</p>
+                    <p class="card-body-nickname"> test 페이지</p>
                 </div>
 
                 <p class="card-body-description">
-                    
+
                     <br>
                     대략적인 한줄 감상문을 적을 수 있는 공간
                 </p>
                 <!--  카드 바디 본문 -->
-            
+
                 <!--  카드 바디 푸터 -->
 
                 <div class="card-body-footer">
@@ -58,7 +93,7 @@
         </div>
         <div class="card">
             <!-- 카드 헤더 -->
-            <div class="card-header2" >
+            <div class="card-header2">
                 <!-- <div class = "card-header-is_closed" > 
                     <div class = "card-header-text" > 모집중 </div > 
                     <div class = "card-header-number" > 2 / 5 </div > 
@@ -71,7 +106,7 @@
                 <div class="card-body-header">
                     <h1>대외비</h1>
                     <p class="card-body-hashtag">#대외 #외비 #영화</p>
-                    <p class = "card-body-nickname"> test 페이지</p>
+                    <p class="card-body-nickname"> test 페이지</p>
                 </div>
 
                 <p class="card-body-description">
@@ -90,11 +125,11 @@
         </div>
         <div class="card">
             <!-- 카드 헤더 -->
-            <div class="card-header3" >
-                <div class = "card-header-is_closed" > 
+            <div class="card-header3">
+                <div class="card-header-is_closed">
                     <!--<div class = "card-header-text" > 모집중 </div > 
-                    <div class = "card-header-number" > 2 / 5 </div >--> 
-                </div >
+                    <div class = "card-header-number" > 2 / 5 </div >-->
+                </div>
             </div>
 
             <!--  카드 바디 -->
@@ -103,7 +138,7 @@
                 <div class="card-body-header">
                     <h1>더 퍼스트 슬램덩크</h1>
                     <p class="card-body-hashtag">#슬램 #덩크 #농구</p>
-                    <p class = "card-body-nickname"> test 페이지</p>
+                    <p class="card-body-nickname"> test 페이지</p>
                 </div>
 
                 <p class="card-body-description">
@@ -122,11 +157,11 @@
         </div>
         <div class="card">
             <!-- 카드 헤더 -->
-            <div class="card-header4" >
-                <div class = "card-header-is_closed" > 
+            <div class="card-header4">
+                <div class="card-header-is_closed">
                     <!--<div class = "card-header-text" > 모집중 </div > 
-                    <div class = "card-header-number" > 2 / 5 </div >--> 
-                </div >
+                    <div class = "card-header-number" > 2 / 5 </div >-->
+                </div>
             </div>
 
             <!--  카드 바디 -->
@@ -135,7 +170,7 @@
                 <div class="card-body-header">
                     <h1>똑똑똑</h1>
                     <p class="card-body-hashtag">#똑똑 #똑똑 #노크</p>
-                    <p class = "card-body-nickname"> test 페이지</p>
+                    <p class="card-body-nickname"> test 페이지</p>
                 </div>
 
                 <p class="card-body-description">
@@ -154,4 +189,5 @@
         </div>
     </div>
 </body>
+
 </html>

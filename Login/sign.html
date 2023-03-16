@@ -7,94 +7,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
     <link rel="stylesheet" type="text/css" href="sign.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../mainPage/main.html">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="../TopTenMovie/topTenMovie.html">Top10</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../ReviewPage/review.html">리뷰게시판</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../MyMovie/Watched.html">내가본영화</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Login/Login.html">로그인</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div id="wrap" class="sign-wrapper">
-        <form action="#" method ="post" name="sign" id="sign-form">
-        <!--회원가입 타이틀 부분-->
-        <div id="title">
-            <h1 class="signTitle">회원가입</h1>
+        <form action="#" method="post" name="sign" id="sign-form">
+            <!--회원가입 타이틀 부분-->
+            <div id="title">
+                <h1 class="signTitle">회원가입</h1>
                 <p>회원이 되어 다양한 혜택을 누리세요</p>
-        </div>
+            </div>
 
-        <div id="container">
-            <div class="row_group">
-            <!-- 아이디 입력 -->    
-                <div class="userInput" id="info_id">
-                    <h3 class="list">아이디<span id="idError"></span></h3>
-                    <span class="box int_id"><input type="text" id="id" class="int check"
-                        maxlength="20" placeholder="아이디 입력"></span>
-                    <button>중복 확인</button>
-                </div>
-            <!-- 비밀번호 입력 -->    
-                <div class="userInput">
-                    <h3 class="list">비밀번호<span id="pwError"></span></h3>
-                    <span class="box int_id"><input type="password" id="pw" class="int check"
-                       maxlength="20" placeholder="비밀번호 입력"></span>
-                </div>
-            <!-- 비밀번호 재확인 입력 -->    
-                <div class="userInput">
-                    <h3 class="list">비밀번호 재입력<span id="pwCheckError"></span></h3>
-                    <span class="box int_id"><input type="password" id="pwCheck" class="int check"
-                        maxlength="20" placeholder="비밀번호 재입력"></span>
-                </div>
-                
-            <!-- 이메일 입력 -->
-                <div class="userInput">
-                    <h3 class="list">이메일<span id="emailError"></span></h3>
-                    <span class="emailInt" id="emailBox"><input type="text" id="email" maxlength="20" class="check" placeholder="이메일 주소"></span>
-                        <span>  @</span>
-                            <!-- 이미지 택일 -->
-                            <select id="mailSelect">
-                                <option>이메일 선택</option>
-                                <option>naver.com</option>
-                                <option>gmail.com</option>
-                                <option>daum.net</option>
-                                <option>hanmail.net</option>
-                                <option>naver.com</option>
-                            </select>
+            <div id="container">
+                <div class="row_group">
+                    <!-- 아이디 입력 -->
+                    <div class="userInput" id="info_id">
+                        <h3 class="list">아이디<span id="idError"></span></h3>
+                        <span class="box int_id"><input type="text" id="id" class="int check" maxlength="20"
+                                placeholder="아이디 입력"></span>
+                        <button>중복 확인</button>
+                    </div>
+                    <!-- 비밀번호 입력 -->
+                    <div class="userInput">
+                        <h3 class="list">비밀번호<span id="pwError"></span></h3>
+                        <span class="box int_id"><input type="password" id="pw" class="int check" maxlength="20"
+                                placeholder="비밀번호 입력"></span>
+                    </div>
+                    <!-- 비밀번호 재확인 입력 -->
+                    <div class="userInput">
+                        <h3 class="list">비밀번호 재입력<span id="pwCheckError"></span></h3>
+                        <span class="box int_id"><input type="password" id="pwCheck" class="int check" maxlength="20"
+                                placeholder="비밀번호 재입력"></span>
+                    </div>
+
+                    <!-- 이메일 입력 -->
+                    <div class="userInput">
+                        <h3 class="list">이메일<span id="emailError"></span></h3>
+                        <span class="emailInt" id="emailBox"><input type="text" id="email" maxlength="20" class="check"
+                                placeholder="이메일 주소"></span>
+                        <span> @</span>
+                        <!-- 이미지 택일 -->
+                        <select id="mailSelect">
+                            <option>이메일 선택</option>
+                            <option>naver.com</option>
+                            <option>gmail.com</option>
+                            <option>daum.net</option>
+                            <option>hanmail.net</option>
+                            <option>naver.com</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div clas="checked-info">
+                        <label for="remember-check">
+                            <input type="checkbox" id="agreePolicy">
+                            <small>
+                                <a href="" target="_blank">서비스 이용약관 및 운영원칙</a>에 동의합니다.
+                            </small>
+                        </label>
+                    </div>
+                    <div class="checked-info">
+                        <label for="remember-check">
+                            <input type="checkbox" id="agreePolicy">
+                            <small>
+                                <a href="" target="_blank">개인정보 수집 및 이용</a>에 동의합니다.
+                            </small>
+                        </label>
+                    </div>
                 </div>
                 <br>
-                <div clas="checked-info">
-                    <label for="remember-check">
-                        <input type="checkbox" id="agreePolicy">
-                        <small>
-                            <a href="" target="_blank">서비스 이용약관 및 운영원칙</a>에 동의합니다.
-                        </small> 
-                    </label>
+                <div class="checked-genre">
+                    <fieldset>
+                        <legend>선호장르 체크</legend>
+                        <p>관심이 있는 장르를 모두 선택해주세요.</p>
+                        <select class="form-select" multiple aria-label="multiple select genre">
+                            <option value="0" selected>액션</option>
+                            <option value="1">코미디</option>
+                            <option value="2">로맨스</option>
+                            <option value="3">공포</option>
+                            <option value="3">판타지</option>
+                            <option value="3">범죄</option>
+                            <option value="3">다큐멘터리</option>
+                        </select>
+                    </fieldset>
                 </div>
-                <div class="checked-info">
-                    <label for="remember-check">
-                        <input type="checkbox" id="agreePolicy">
-                        <small>
-                            <a href="" target="_blank">개인정보 수집 및 이용</a>에 동의합니다.
-                        </small> 
-                    </label>
+                <div clas="complete-sign">
+                    <button type="submit" class="btn sign-success">가입하기</button>
                 </div>
             </div>
-                <br>
-            <div class="checked-genre">
-                <fieldset>
-                    <legend>선호장르 체크</legend>
-                    <p>관심이 있는 장르를 모두 선택해주세요.</p>
-                    <select class="form-select" multiple aria-label="multiple select genre">
-                        <option value= "0" selected>액션</option>
-                        <option value="1">코미디</option>
-                        <option value="2">로맨스</option>
-                        <option value="3">공포</option>
-                        <option value="3">판타지</option>
-                        <option value="3">범죄</option>
-                        <option value="3">다큐멘터리</option>
-                    </select>
-                </fieldset>
-            </div>
-            <div clas="complete-sign">
-                <button type="submit" class="btn sign-success">가입하기</button>
-            </div>    
-        </div>
-    </form>
-    </div>   
+        </form>
+    </div>
 </body>
 
 </html>
